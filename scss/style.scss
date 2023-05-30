@@ -1,0 +1,547 @@
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v30-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Panton";
+  font-weight: 400;
+  src: url("../fonts/PantonNarrow-Trial-Black.woff2") format("woff2"),
+    url("../fonts/PantonNarrow-Trial-Black.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Panton bold";
+  font-weight: 700;
+  src: url("../fonts/PantonNarrow-Trial-Bold.woff2") format("woff2"),
+    url("../fonts/PantonNarrow-Trial-Bold.woff") format("woff");
+}
+
+/* roboto-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v30-latin-500.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v30-latin-500.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v30-latin-700.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v30-latin-700.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+:root {
+  --main-color: #2e3a59;
+  --gray-color: #aaaaaa;
+  --btn: #38bcea;
+  --des-color: #6f6f6f;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  font-size: 6.25%;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 24rem;
+  line-height: 31.32rem;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1760rem;
+  margin: 0 auto 0 auto;
+  padding: 0 50rem 0 50rem;
+}
+
+.header {
+  margin-bottom: 25.1rem;
+}
+.header__container {
+  margin-top: 31rem;
+  display: flex;
+}
+.container {
+}
+.site__logo {
+  margin-right: 58rem;
+}
+.site__logo-image {
+}
+.site__nav {
+  display: flex;
+  align-items: center;
+  margin-right: 128.6rem;
+}
+.site__list-icon {
+  display: flex;
+  gap: 21.31rem;
+  margin-right: 100rem;
+  font-family: "Panton", Arial, Helvetica, sans-serif;
+}
+.site__item {
+}
+.site__link {
+}
+.site__image {
+}
+.site__list-text {
+  gap: 35rem;
+  display: flex;
+  align-items: center;
+}
+.site__link-text {
+  font-size: 15px;
+  line-height: 18px;
+  color: var(--gray-color);
+}
+
+.about-us {
+  color: #01678a;
+}
+
+.header__info {
+  display: flex;
+}
+.header__info__location {
+  font-size: 15rem;
+  line-height: 17rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-right: 75rem;
+}
+
+.header__info__location::before {
+  content: "";
+  background-repeat: no-repeat;
+  width: 15rem;
+  height: 19rem;
+  background-image: url("../images/svg/location-icon.svg");
+  position: absolute;
+  left: -32.88rem;
+}
+
+.header__info__calendar {
+  display: flex;
+  align-items: center;
+  font-size: 15rem;
+  line-height: 18rem;
+  text-align: right;
+  position: relative;
+  margin-right: 65rem;
+}
+
+.header__info__calendar::before {
+  content: "";
+  background-repeat: no-repeat;
+  width: 18rem;
+  height: 21rem;
+  position: absolute;
+  left: -29.5rem;
+  background-image: url("../images/svg/Calendar-icon.svg");
+}
+
+.header__info__week {
+  margin-left: 10rem;
+  color: var(--gray-color);
+}
+.header__info__contact {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto bold";
+  font-size: 18rem;
+  line-height: 22rem;
+  margin-right: 27rem;
+  position: relative;
+  margin-right: 34rem;
+}
+
+.header__info__contact::before {
+  content: "";
+  background-image: url("../images/svg/Telephone-icon.svg");
+  width: 16rem;
+  height: 16rem;
+  position: absolute;
+  background-repeat: no-repeat;
+  left: -20rem;
+  align-items: center;
+}
+
+.header__btn {
+}
+.haeder__info__btn {
+  background: var(--btn);
+  border-radius: 3px;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 14rem 8rem;
+  font-family: "Roboto";
+  letter-spacing: 1rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.haeder__info__btn:hover {
+  opacity: 0.9;
+}
+
+.main {
+}
+.main__hero {
+  margin-bottom: 76.9rem;
+}
+.hero__container {
+  background-image: url("../images/jpg/nurse-hero.jpg");
+  background-size: cover;
+}
+.main__hero__info {
+  padding: 146.3rem 0 146.3rem;
+}
+.main__hero__location {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #4e4e4e;
+  margin-bottom: 17.6rem;
+}
+.main__hero__title {
+  font-family: "Panton bold";
+  font-size: 48rem;
+  font-weight: 700;
+  line-height: 104.19%;
+  max-width: 330rem;
+
+  color: #1a3444;
+  margin-bottom: 17rem;
+}
+.main__hero__def {
+  max-width: 440rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #6f6f6f;
+  margin-bottom: 37rem;
+}
+.site__btn {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20rem;
+  line-height: 23rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 16rem 22rem;
+  letter-spacing: 1rem;
+
+  background: #38bcea;
+  box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  border: none;
+  color: #ffffff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.site__btn:hover {
+  opacity: 0.9;
+}
+
+.main__hero__service {
+}
+.main__hero__service-list {
+  display: flex;
+  gap: 6.47rem;
+}
+.main__hero__service-list__item {
+  padding: 27rem 0 36rem;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(9.5px);
+  padding: 27.1rem 37.3rem;
+}
+.main__hero__service-list__item-text {
+}
+.doc {
+  padding-right: 50rem;
+  padding-left: 50rem;
+  position: relative;
+}
+
+.doc::before {
+  content: "";
+  left: -9rem;
+  width: 27.05rem;
+  height: 42rem;
+  background-image: url("../images/svg/Doctor-icon.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.seat {
+  padding-right: 92rem;
+  padding-left: 92rem;
+  position: relative;
+}
+
+.seat::before {
+  content: "";
+  left: 44rem;
+  width: 29rem;
+  height: 39.4rem;
+  background-image: url("../images/svg/Seat-icon.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.loc {
+  padding-right: 84rem;
+  padding-left: 84rem;
+  position: relative;
+}
+
+.loc::before {
+  content: "";
+  left: 44rem;
+  width: 25.1rem;
+  height: 41.8rem;
+  background-image: url("../images/svg/location-list-icon.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+}
+
+.section-one {
+}
+.section-one__container {
+}
+.section-one__info {
+}
+.section-one__title {
+  font-family: "Panton bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48rem;
+  line-height: 59rem;
+
+  color: #12354b;
+  margin-bottom: 14rem;
+}
+.section-one__des {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24rem;
+  max-width: 439rem;
+  line-height: 28rem;
+
+  color: #737373;
+  margin-bottom: 69rem;
+}
+.section-one__service {
+}
+.section-one__service-list {
+  display: flex;
+  gap: 40rem;
+}
+.section-one__item {
+  justify-content: center;
+  align-items: center;
+}
+.section-one__item-image {
+  display: flex;
+}
+
+.section-one__special-image {
+  margin: 0 auto 29.3rem;
+  padding-top: 32rem;
+}
+
+.section-one__item-des {
+  font-family: "Panton bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26rem;
+  line-height: 32rem;
+  text-align: center;
+
+  color: #ffffff;
+  padding: 0 39.7rem 0;
+  margin-bottom: 34rem;
+}
+
+.bg-color {
+  background-color: var(--btn);
+  background: #38bcea;
+  box-shadow: 0rem 20rem 50rem rgba(165, 165, 165, 0.2);
+  border-radius: 5rem;
+}
+
+.section-one__item__vector {
+  margin: 0 auto 0;
+  justify-content: center;
+  display: flex;
+  padding: 20.13rem 140.9rem;
+  background-color: #fff;
+  border-radius: 5rem;
+}
+.section-two {
+}
+.section-two__container {
+}
+.section-two__title {
+}
+.section-two__service {
+}
+.section-two__list {
+}
+.section-two__item {
+}
+.section-two__item-number {
+}
+.section-two__item-title {
+}
+.section-two__item-des {
+}
+.section-three {
+}
+.section-three__container {
+}
+.section-three__info {
+}
+.section-three__title {
+}
+.site__number-des {
+}
+.site__call {
+}
+.site__form {
+}
+.site__input {
+}
+.site__about {
+}
+.site__about-span {
+}
+.section-three__image {
+}
+.section-four {
+}
+.section-four__container {
+}
+.section-four__info {
+}
+.section-four__title {
+}
+.section-four__des {
+}
+.section-four__about {
+}
+.section-four__list {
+}
+.section-four__item {
+}
+.section-four__list-two {
+}
+.section-four__item-two {
+}
+.section-four__list-des {
+}
+.section-four__support {
+}
+.section-four__support__image {
+}
+.section-four__image {
+}
+.section-five {
+}
+.section-five__container {
+}
+.section-five__info {
+}
+.section-five__title {
+}
+.section-five__des {
+}
+.section-five__service {
+}
+.section-five__card {
+}
+.section-five__card-info {
+}
+.section-five__card-title {
+}
+.section-five__card-des {
+}
+.section-five__card-image {
+}
+.sectoin-six {
+}
+.section-six__container {
+}
+.section-six__info {
+}
+.section-six__title {
+}
+.section-six__image {
+}
+.footer {
+}
+.footer-container {
+}
+.footer__nav {
+}
+.footer__link {
+}
+.footer__link-image {
+}
+.footer__info {
+}
+.footer__info-des {
+}
+.footer__info-underline {
+}
